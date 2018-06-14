@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAd5vlLKBgXE6gG7mq5MUcwQAAAAACAAAAAAAQZgAAAAEAACAAAAAVfRvdw1yi9J2Cc/zMXXrknUnUpgshj0aDjhEyjrMlGQAAAAAOgAAAAAIAACAAAABOIF5+vPOU/BF/WXoKvxX2EEdLW5q80Q8RZ8V+2cJbBoAAAACRZvQVRWbk/fFhaQF0pQcVO5+vvlU0PprjQvi7yQHdq5u4o9kGIzsCJ6wdEh1uAGP2QzHI7zzpdGRq4WM5whCy09gkqCI7UWDeZdb0N6dxkzgAKtwHS2FXUYS0EOtVgfaUfaeG4i4MklB7hDuxJwoENyEI22VXp9K8oEsY6ciSZUAAAAAw3O+0RHWy5vA8IHFDjOZhLtIJuTQR8wBTCUP+VIuzLapwOXHlgQtmk9TSwQE3JSwAIx73uocLXwflZUqma5hL</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:nettlesnookdbserver.database.windows.net,1433;Initial Catalog=Nettlesnook_db;User Id=MAConner@nettlesnookdbserver;Password=Way2Fun!</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Nettlesnook.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:nettlesnookdbserver.database.windows.net,1433;Initial Catalog=Nettlesnook_db;User Id=MAConner@nettlesnookdbserver;Password=Way2Fun!</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Nettlesnook.Models.Blog>
+@{
+    ViewData["Title"] = "Blog List";
+    ViewData["Description"] = "";
+}
+<main class="content">
+    <h2>Blog Edit Page</h2>
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+
+    @foreach (var item in Model)
+    {
+        <article>
+            <h3>@Html.DisplayFor(model => item.Title)</h3>
+            <div class="content-left">
+                <p>Posted: @Html.DisplayFor(model => item.DateTime)</p>
+                <p>@Html.DisplayFor(model => item.Body)</p>
+                <p>
+                    @if (item.Archive)
+                     {
+                        <input type="checkbox" checked />
+                    }
+                    @if (!item.Archive)
+                     {
+                        <input type="checkbox" />
+                     }
+                    Archived 
+                    <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                </p>
+            </div>
+                
+            @foreach (BlogImages i in item.Images)
+             {
+                <img src="~/images/@Html.DisplayFor(model => i.ImageFileName)" alt="@Html.DisplayFor(model => i.ImageDesc)" title="@Html.DisplayFor(model => i.ImageFileName)" />
+             }
+        </article>
+    }
+
+
+</main>

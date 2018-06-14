@@ -1,0 +1,280 @@
+body {
+    max-width: 960px;
+	margin: auto;
+	padding: 0 1%;
+	font-family: sans-serif;
+    color: black;
+}
+
+nav {
+    background-color: #514B2C;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header h1 {
+	margin: 0;
+	text-align: left;
+}
+
+header img {
+    width: 100%;
+	display: none;
+}
+
+nav>ul>li>a { 
+    color: #FAEBD7;
+    text-decoration: none;
+}
+
+nav>ul>li>a:visited {
+    color: #FAEBD7;
+}
+
+nav>ul>li>ul>li>a {
+    color: sienna;
+    text-decoration: none;
+}
+
+nav {
+    margin: auto;
+    text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+	padding: 10px 0;
+}
+
+nav>ul>li>span {
+    color: #88976D;
+}
+
+nav>ul>li>ul>li>span{
+    color: #514B2C;
+}
+
+nav>ul ul {
+    display: none;
+}
+
+nav>ul>li:hover ul, nav ul li:target ul {
+    display: block;
+	background-color: #A2AE8D;
+}
+
+ul>li:hover>a {
+	color: #D5C6B2;
+}
+
+ul>li>ul>li:hover>a {
+	color: #FAEBD7;
+}
+
+h2, h3 {
+    padding-bottom: 0px;
+	color: black;
+}
+
+h2+p, h3+p {
+    padding-top: 0px;
+}
+
+main {
+    width: 96%;
+    margin: auto;
+    color: black;
+}
+
+main img {
+    width: 92%;
+    display: block;
+    margin: 5px auto;
+}
+
+main article a {
+	color: black;
+	text-decoration: none;
+}
+
+main p a, main li a, main a {
+	color: black;
+	text-decoration: underline;
+}
+
+main p a:hover, main li:hover a, main a:hover {
+    color: sienna;
+    text-decoration: none;
+}
+
+main ul {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+div#messageForm {
+    max-width: 60ch;
+}
+input#messageName, input#messageEmail {
+    width: 75%;
+    float: right;
+}
+
+textarea#messageBody {
+    width: 100%;
+    word-break: break-word;
+    clear: both;
+}
+
+dl dt {
+    font-weight: bolder;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    height: 31px;
+}
+footer>p>a {
+    float: right;
+    width: 88px;
+    margin: 0;
+}
+
+/****** Start min width 400 ******/
+@media screen and (min-width: 400px) {
+    
+    
+   body {
+        background-color: lightslategrey;
+        font-family: "MV Boli", cursive;
+        text-align: left;
+    }
+
+   header h1 {
+        display: none;
+    }
+
+    header img {
+        display: block;
+        width: 100%;
+    }
+
+    main {
+        padding: 0 5px 20px 5px;
+        width: 98%;
+    }
+
+    main p.intro:first-letter {
+        font-size: 20pt;
+        font-weight: bold;
+    }
+
+    main p {
+        text-indent: 25px;
+        color:black;
+    }
+
+    main div {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    /****** Start Index style ******/
+    main.index article {
+        display: -webkit-inline-flex;
+        display: inline-flex;
+        width: 49%;
+        margin: 0 auto;
+    }
+
+    main.index article:hover h3 {
+        color: sienna;
+    }
+
+    main.index article h3 {
+        text-indent: 20px;
+        margin: 0;
+        text-decoration: underline;
+    }
+
+    main.index article p {
+        width: 90%;
+        margin: auto;
+    }
+
+    /****** Start Content Style ******/
+    main.content h2, h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    main.content div.content-left ~ img {
+        display: inline-block;
+        width: 23%;
+    }
+
+    footer {
+        clear: both;
+    }
+}
+
+/****** Start min width 660 ******/
+@media screen and (min-width: 660px) {
+    nav > ul > li {
+        display: inline-block;
+        position: relative;
+        width: 19%;
+    }
+
+    nav > ul ul {
+        position: absolute;
+        z-index: 1;
+        margin-top: 10px;
+    }
+
+    /****** Start Index Style ******/
+    main.index div {
+        display: -webkit-inline-flex;
+        display: inline-flex;
+    }
+
+    main.index article {
+        width: 24%;
+    }
+
+    /****** Start Content Style ******/
+    main.content article {
+        clear: both;
+    }
+
+    article::after {
+        clear: both;
+    }
+
+    div.content-left {
+        float: left;
+        width: 66%;
+        margin-right: 4%;
+    }
+
+    div.content-left ~ img {
+        float: right;
+        width: 30%;
+        margin: 5px;
+    }
+
+    footer {
+        clear: both;
+    }
+
+}

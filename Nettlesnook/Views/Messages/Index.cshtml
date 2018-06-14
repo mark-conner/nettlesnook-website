@@ -1,0 +1,49 @@
+﻿@model Nettlesnook.Models.Messages
+
+@{
+    ViewData["Title"] = "Contact Us | Nettlesnook";
+    ViewData["Description"] = "Leave your name, email and a short message for the folks at Nettlesnook Farm.";
+}
+
+<main class="content">
+    <h2>Leave us a message!</h2>
+    <hr />
+    <article>
+        <div class="row, content-left">
+            <div id="messageForm">
+                <form asp-action="Index">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" required/>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Body" class="control-label"></label>
+                        <br />
+                        <textarea asp-for="Body" class="form-control" maxlength="1024" rows="6" required></textarea>
+                        <span asp-validation-for="Body" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TimeStamp" class="control-label" hidden></label>
+                        <input asp-for="TimeStamp" class="form-control" type="hidden" value="@DateTime.Now"/>
+                        <span asp-validation-for="TimeStamp" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Send" class="btn btn-default" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <img src="~/images/sheep1.jpg" alt="Picture of our sheep waiting for you to contact him." title="Blackberry" />
+    </article>
+</main>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

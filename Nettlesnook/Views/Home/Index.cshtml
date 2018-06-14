@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Home";
+    ViewData["Description"] = "Nettlesnook Farm is a small hobby farm located in Onalaska, Washington.";
+}
+
+<main class="index">
+    <h2>Nettlesnook Farm: Home</h2>
+    <p class="intro">
+        We are a small hobby farm located on 2¼ acres in Onalaska, Washington.
+        Life at Nettlesnook Farm is all about practicing permaculture and striving
+        for self-sustainability through edible landscaping, food preservation,
+        fermentation, and home baked goods. Fiber arts and sewing craft, making our
+        own personal products, and doing it our self when possible is part of our day
+        to day life.  We balance living in the modern world while doing what we can to
+        live a more handmade life.
+    </p>
+    <div>
+        <article>
+            <a asp-area="" asp-controller="Fermenting" asp-action="Index">
+                <h3>Fermenting</h3>
+                <img src="~/images/fermentingThumb.jpg" alt="Image of fermented items." />
+                <p>
+                    We make a wide range food and beverages from natural fermentation.  These include
+                    beer, wine, kombucha, kefir, sourdough bread, sauerkraut and other fermented vegetables.
+                </p>
+            </a>
+        </article>
+        <article>
+            <a asp-area="" asp-controller="Fiber" asp-action="Index">
+                <h3>Fiber</h3>
+                <img src="~/images/fiberThumb.jpg" alt="Image of wool supplies and crafts." />
+                <p>
+                    View some of my completed works from my many hobbies which include: sewing, felting,
+                    spinning, knitting and weaving.
+                </p>
+            </a>
+        </article>
+        <article>
+            <a asp-area="" asp-controller="Permaculture" asp-action="Index">
+                <h3>Permaculture</h3>
+                <img src="~/images/Yard-GardenThumb.jpg" alt="Image of a flower." />
+                <p>
+                    Look at some of the tricks we use to work with nature instead of fight it.  And check out
+                    our various edible plants and fruit and nut trees.
+                </p>
+            </a>
+        </article>
+        <article>
+            <a asp-area="" asp-controller="Resources" asp-action="Index">
+                <h3>Resources</h3>
+                <img src="~/images/resourcesThumb.jpg" alt="Image of books on a bookshelf." />
+                <p>
+                    A selection of our favorite books and websites that we get our inspiration and goods from.
+                </p>
+            </a>
+        </article>
+    </div>
+</main>

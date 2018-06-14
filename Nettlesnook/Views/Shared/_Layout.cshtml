@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewData["Title"] | Nettlesnook</title>
+        <meta name="author" content="Nettlesnook: Mark Conner; Kim Conner" />
+        <meta name="description" content="@ViewData["Description"]" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <environment include="Development">
+            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+            <link rel="stylesheet" type="text/css" href="~/lib/jquery-ui/themes/overcast/jquery-ui.css" />
+            <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+        </environment>
+        <environment exclude="Development">
+            <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+                  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+            <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/themes/base/jquery-ui.css"
+                  asp-fallback-href="~/lib/jquery-ui/themes/overcast/jquery-ui.min.css"
+                  asp-fallback-test-class="ui-helper-hidden" asp-fallback-test-property="display" asp-fallback-test-value="none"/>
+            <link rel="stylesheet" type="text/css" href="~/css/site.min.css" asp-append-version="true" />
+        </environment>
+    </head>
+    <body>
+        <header>
+            <h1>Nettlesnook Farm</h1>
+            <img src="~/images/logo.jpg" alt="Nettlesnook Farm image" />
+            <nav>
+                <ul>
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <ul>
+                            <li><a asp-area="" asp-controller="Blogs" asp-action="Index">Blog</a></li>
+                            <li><a asp-area="" asp-controller="Messages" asp-action="Index">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Fermenting" asp-action="Index" title="Fermenting">Fermenting</a>
+                        <ul>
+                            <li><a asp-area="" asp-controller="Fermenting" asp-action="Beverages" title="Fermenting - Beverages">Beverages</a></li>
+                            <li><a asp-area="" asp-controller="Fermenting" asp-action="Sourdough" title="Fermenting - Sourdough">Sourdough Bread</a></li>
+                            <li><a asp-area="" asp-controller="Fermenting" asp-action="Vegetables" title="Fermenting - Vegetables & Fruits">Vegetables</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Fiber" asp-action="Index" title="Fiber Crafts">Fiber Crafts</a>
+                        <ul>
+                            <li><a asp-area="" asp-controller="Fiber" asp-action="Felting" title="Fiber Crafts - Felting">Felting</a></li>
+                            <li><a asp-area="" asp-controller="Fiber" asp-action="Knitting" title="Fiber Crafts - Knitting">Knitting</a></li>
+                            <li><a asp-area="" asp-controller="Fiber" asp-action="Sewing" title="Fiber Crafts -  Sewing">Sewing</a></li>
+                            <li><a asp-area="" asp-controller="Fiber" asp-action="Spinning" title="Fiber Crafts - Spinning">Spinning</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Permaculture" asp-action="Index" title="Permaculture">Permaculture</a>
+                        <ul>
+                            <li><a asp-area="" asp-controller="Permaculture" asp-action="Landscaping" title="Permaculture - Landscaping">Edible Landscaping</a></li>
+                            <li><a asp-area="" asp-controller="Permaculture" asp-action="Herbs" title="Permaculture - Herbs">Herbs</a></li>
+                            <li><a asp-area="" asp-controller="Permaculture" asp-action="Vegetables" title="Permaculture - Vegetables">Vegetables</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Resources" asp-action="Index" title="Resources">Resources</a>
+                        <ul>
+                            <li><a asp-area="" asp-controller="Resources" asp-action="Books" title="Resources - Books">Books</a></li>
+                            <li><a asp-area="" asp-controller="Resources" asp-action="Sites" title="Resources - Sites">Sites</a></li>
+                            @await Html.PartialAsync("_LoginPartial")
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+                @RenderBody()
+
+                <footer>
+                    <p>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                 alt="Valid CSS!" />
+                        </a>
+                    </p>
+                    <p>&copy; Nettlesnook Farm @DateTime.Today.ToString("yyyy")</p>
+                </footer>
+
+        <environment include="Development">
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+            <script src="~/lib/jquery-ui/jquery-ui.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>
+        </environment>
+        <environment exclude="Development">
+            <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"
+                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                    asp-fallback-test="window.jQuery">
+            </script>
+            <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+            <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.min.js"
+                    asp-fallback-src="~/lib/jquery-ui/jquery-ui.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.widget">
+            </script>
+            <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                    crossorigin="anonymous"
+                    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+            </script>
+            <script src="~/js/site.min.js" asp-append-version="true"></script>
+        </environment>
+
+        @RenderSection("Scripts", required: false)
+    </body>
+</html>

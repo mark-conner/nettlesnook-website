@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "Fiber Crafts";
+}
+
+<main class="index">
+    <h2>Nettlesnook Farm: Fiber Crafts</h2>
+    <p class="intro">
+        I first picked up a crochet needle at about age 10, my aunt showed be a single crochet stitch and instantly
+        crocheted a potholder.  I do not remember if it was functional or even looked very pretty, but I remember
+        it being blue.  Shortly thereafter my mother taught me to knit.  I think I just played around with the needles
+        and did not make anything.  That all changed my senior year in high school as an exchange student in Berlin,
+        Germany.  Knitting was the rage and so knit was what I did.  I designed a sweater for my sister, knit up some
+        cowls and loved the art.  College brought about change, lack of funds and then a marriage and children.
+        Although I continued to sew, I only knitted the occasional rag rug.  Then about 10 years ago I was at a garage
+        sale and there was a book of yarns, lots of it wool, for $5.  I bought, donated over half of it, and with the
+        rest started knitting, with a little crochet.  It was soothing.
+    </p>
+    <p>
+        I have now expanded into all fiber arts: knitting, crocheting, wet and dry felting, spinning and just this
+        month bought a loom.  We own a sheep and the fibers have gone to stuffing pillows, as well as, my spinning wheel.
+    </p>
+    <div>
+        <article>
+            <a asp-area="" asp-controller="Fiber" asp-action="Felting">
+                <h3>Felting</h3>
+                <img src="~/images/feltThumb.jpg" alt="Image of felted items on a chair." />
+                <p>
+                    A wee bit of hot water and soap go a long way to turn wool rovings into felt.
+                </p>
+            </a>
+        </article>
+        <article>
+            <a asp-area="" asp-controller="Fiber" asp-action="Knitting">
+                <h3>Knitting</h3>
+                <img src="~/images/knittingThumb.jpg" alt="Picture of a ball of yarn in a yarn bowl." />
+                <p>
+                    Knitting is my go-to to-go hobby.
+                </p>
+            </a>
+        </article>
+        <article>
+            <a asp-area="" asp-controller="Fiber" asp-action="Sewing">
+                <h3>Sewing</h3>
+                <img src="~/images/sewingThumb.jpg" alt="Image of fabric being cut on a table." />
+                <p>
+                    When you know how to sew, you can make (and fix) anything.
+                </p>
+            </a>
+        </article>
+        <article>
+            <a asp-area="" asp-controller="Fiber" asp-action="Spinning">
+                <h3>Spinning</h3>
+                <img src="~/images/spinningThumb.jpg" alt="Picture of our spinning wheel." />
+                <p>
+                    Why get yarn from the store when you can get it from the sheep?
+                </p>
+            </a>
+        </article>
+    </div>
+</main>

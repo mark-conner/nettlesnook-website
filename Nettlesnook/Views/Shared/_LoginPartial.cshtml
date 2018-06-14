@@ -1,0 +1,14 @@
+@using Microsoft.AspNetCore.Identity
+@using Nettlesnook.Models
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <li><a asp-area="" asp-controller="Account" asp-action="Dashboard" id="accountLink">Dashboard</a></li>
+}
+else
+{
+    <li><a asp-area="" asp-controller="Account" asp-action="Login" asp-route-returnUrl="/Account/Dashboard" id="accountLink">(Login)</a></li>
+}

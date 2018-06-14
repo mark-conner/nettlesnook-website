@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Nettlesnook.Models.Blog>
+
+
+@{
+    ViewData["Title"] = "The Blog | Nettlesnook";
+    ViewData["Description"] = "A running tally of my creative thoughts, ideas and projects at Nettlesnook Farm.";
+}
+
+<main class="content">
+    <h2>Nettlesnook Farm Blog</h2>
+
+    @foreach (Blog b in Model)
+    {
+        @if (!b.Archive) //Do not display if flagged for Archive
+        {
+            <article>
+                <h3>@Html.DisplayFor(model => b.Title)</h3>
+                <div class="content-left">
+                    <p>Posted: @Html.DisplayFor(model => b.DateTime)</p>
+                    <p>@Html.DisplayFor(model => b.Body)</p>
+                </div>
+                @foreach (BlogImages i in b.Images)
+                {
+                    <img src="~/images/@Html.DisplayFor(model => i.ImageFileName)" alt="@Html.DisplayFor(model => i.ImageDesc)" title="@Html.DisplayFor(model => i.ImageFileName)" />
+
+                }
+             </article>
+        }
+    }
+</main>

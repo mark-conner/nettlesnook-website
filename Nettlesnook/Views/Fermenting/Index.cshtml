@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Fermenting";
+    ViewData["Description"] = "We make most of our own beverages at Nettlesnook Farm.";
+}
+
+<main class="index">
+    <h2>Nettlesnook Farm: Fermenting</h2>
+    <p class="intro">
+        We take much of the produce from our farm and ferment it for storage or for enjoyment.  We also make our own bread and kombucha.
+    </p>
+    <div>
+        <article>
+            <a asp-area="" asp-controller="Fermenting" asp-action="Beverages">
+                <h3>Beverages</h3>
+                <img src="~/images/beveragesThumb.jpg" alt="Image of different fermented bottled beverages." />
+                <p>
+                    Wine, beer, kombucha and kefir.  See how we make all of our own beverages.
+                </p>
+            </a>
+        </article>
+        <article>
+            <a asp-area="" asp-controller="Fermenting" asp-action="Sourdough">
+                <h3>Sourdough</h3>
+                <img src="~/images/sourdoughThumb.jpg" alt="Image of sourdough bread on a cutting board." />
+                <p>
+                    Water, flour, starter (or yeast), and salt.  That is all you need to make bread.
+                </p>
+            </a>
+        </article>
+        <article>
+            <a asp-area="" asp-controller="Fermenting" asp-action="VegFrt">
+                <h3>Vegetables</h3>
+                <img src="~/images/vegetableThumb.jpg" alt="Picture of sauerkraut on a plate." />
+                <p>
+                    Sauerkraut and other pickled items from the garden.
+                </p>
+            </a>
+        </article>
+    </div>
+</main>
+

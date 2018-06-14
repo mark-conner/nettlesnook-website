@@ -1,0 +1,76 @@
+﻿@model Nettlesnook.Models.Blog
+
+@{
+    ViewData["Title"] = "Create";
+    ViewData["Description"] = "Blog creation page for Nettlesnook Farm.";
+}
+
+<main class="content">
+    <h2>Create</h2>
+    <h4>Blog</h4>
+    <hr />
+    <div id="tabs">
+        <ul>
+            <li><a href="#editTab">Edit</a></li>
+            <li><a href="#uploadImages">Upload Images</a></li>
+            <li><a href="#previewTab">Preview</a></li>
+        </ul>
+
+        <!--Tab for creating the blog entry-->
+        <div id="editTab" class="row">
+            <div class="col-md-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="DateTime" class="control-label" hidden></label>
+                        <input asp-for="DateTime" class="form-control" type="hidden" value="@DateTime.Now" />
+                        <span asp-validation-for="DateTime" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Title" class="control-label"></label>
+                        <input asp-for="Title" class="form-control" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Body" class="control-label"></label>
+                        <textarea asp-for="Body" class="form-control"></textarea>
+                        <span asp-validation-for="Body" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input asp-for="Archive" /> @Html.DisplayNameFor(model => model.Archive)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Tab for uploading images to the server-->
+        <div id="uploadImages">
+            <!--The HTML in this div is from https://docs.microsoft.com/en-us/aspnet/core/mvc/models/file-uploads-->
+            <p>Upload a file using this form:</p>
+            <form method="post" enctype="multipart/form-data" asp-action="ImageUpload">
+                <input type="file" name="files" />
+                <br/>
+                <input type="submit" value="Upload" />
+            </form>
+        </div>
+        <!--Tab for previewing the blog-->
+        <div id="previewTab">
+            <article>
+                <h3>This will be the title</h3>
+                <div class="content-left">
+                    <p>This is a large set of text.  No really, it is big!</p>
+                </div>
+                <img src="~/images/blank.jpg" alt="This is a placeholder image." title="blank.jpg" />
+            </article>
+        </div>
+    </div>
+    <div>
+        <a asp-controller="Account" asp-action="Dashboard">Back to Dashboard</a>
+    </div>
+</main>

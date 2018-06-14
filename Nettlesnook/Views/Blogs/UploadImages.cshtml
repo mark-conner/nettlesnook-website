@@ -1,0 +1,24 @@
+﻿<main class="content">
+    <article>
+        <div class="content-left">  <!--With help from Christopher Noto-->
+            <h2 >Upload Picture</h2>
+            <span class="alert-danger">@ViewBag.Error</span><span class="alert-success">@ViewBag.Success</span>
+            <form method="post" asp-action="UploadImages" enctype="multipart/form-data">
+                <div class="form-control-static">
+                    File to upload:<br/>
+                    <input name="ImageFile" class="form-control" type="file" data-input="file" />
+                    <br/>
+                    New file name:<br/>
+                    <input name="NewFileName" class="form-control" type="text" required/>
+                </div>
+                <div class="form-control-static">
+                    <input type="submit" value="Upload" class="btn btn btn-border center-block" />
+                </div>
+            </form>
+            <div>
+                <a asp-controller="Account" asp-action="Dashboard">Back to Dashboard</a>
+            </div>
+        </div>
+    </article>
+    
+</main>

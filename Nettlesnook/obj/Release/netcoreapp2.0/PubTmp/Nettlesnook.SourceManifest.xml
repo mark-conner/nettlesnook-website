@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\WorkingNettlesNook\Without image upload\Nettlesnook\obj\Release\netcoreapp2.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\WorkingNettlesNook\Without image upload\Nettlesnook\obj\Release\netcoreapp2.0\PubTmp\EFSQLScripts\Nettlesnook.Data.ApplicationDbContext.sql" />
+</sitemanifest>

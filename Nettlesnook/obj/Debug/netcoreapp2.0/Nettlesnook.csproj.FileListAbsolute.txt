@@ -1,0 +1,24 @@
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\Nettlesnook\Nettlesnook\bin\Debug\netcoreapp2.0\Nettlesnook.deps.json
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\Nettlesnook\Nettlesnook\bin\Debug\netcoreapp2.0\Nettlesnook.runtimeconfig.json
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\Nettlesnook\Nettlesnook\bin\Debug\netcoreapp2.0\Nettlesnook.runtimeconfig.dev.json
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\Nettlesnook\Nettlesnook\bin\Debug\netcoreapp2.0\Nettlesnook.dll
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\Nettlesnook\Nettlesnook\bin\Debug\netcoreapp2.0\Nettlesnook.pdb
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\Nettlesnook\Nettlesnook\obj\Debug\netcoreapp2.0\Nettlesnook.csprojResolveAssemblyReference.cache
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\Nettlesnook\Nettlesnook\obj\Debug\netcoreapp2.0\Nettlesnook.csproj.CoreCompileInputs.cache
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\Nettlesnook\Nettlesnook\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\Nettlesnook\Nettlesnook\obj\Debug\netcoreapp2.0\Nettlesnook.AssemblyInfoInputs.cache
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\Nettlesnook\Nettlesnook\obj\Debug\netcoreapp2.0\Nettlesnook.AssemblyInfo.cs
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\Nettlesnook\Nettlesnook\obj\Debug\netcoreapp2.0\Nettlesnook.dll
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\Nettlesnook\Nettlesnook\obj\Debug\netcoreapp2.0\Nettlesnook.pdb
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\WorkingNettlesNook\Without image upload\Nettlesnook\bin\Debug\netcoreapp2.0\Nettlesnook.deps.json
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\WorkingNettlesNook\Without image upload\Nettlesnook\bin\Debug\netcoreapp2.0\Nettlesnook.runtimeconfig.json
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\WorkingNettlesNook\Without image upload\Nettlesnook\bin\Debug\netcoreapp2.0\Nettlesnook.runtimeconfig.dev.json
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\WorkingNettlesNook\Without image upload\Nettlesnook\bin\Debug\netcoreapp2.0\Nettlesnook.dll
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\WorkingNettlesNook\Without image upload\Nettlesnook\bin\Debug\netcoreapp2.0\Nettlesnook.pdb
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\WorkingNettlesNook\Without image upload\Nettlesnook\obj\Debug\netcoreapp2.0\Nettlesnook.csprojResolveAssemblyReference.cache
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\WorkingNettlesNook\Without image upload\Nettlesnook\obj\Debug\netcoreapp2.0\Nettlesnook.csproj.CoreCompileInputs.cache
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\WorkingNettlesNook\Without image upload\Nettlesnook\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\WorkingNettlesNook\Without image upload\Nettlesnook\obj\Debug\netcoreapp2.0\Nettlesnook.AssemblyInfoInputs.cache
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\WorkingNettlesNook\Without image upload\Nettlesnook\obj\Debug\netcoreapp2.0\Nettlesnook.AssemblyInfo.cs
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\WorkingNettlesNook\Without image upload\Nettlesnook\obj\Debug\netcoreapp2.0\Nettlesnook.dll
+C:\Users\Mark\OneDrive - Centralia College\1718-2 Fall\IT310\Projects\WorkingNettlesNook\Without image upload\Nettlesnook\obj\Debug\netcoreapp2.0\Nettlesnook.pdb
